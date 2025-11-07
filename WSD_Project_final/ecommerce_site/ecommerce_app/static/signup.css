@@ -1,0 +1,150 @@
+.auth-page {
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loader */
+.loader-wrapper {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinner {
+  border: 5px solid #eee;
+  border-top: 5px solid #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Header */
+.auth-wrapper {
+  text-align: center;
+}
+.auth-header {
+  margin-bottom: 20px;
+}
+.chef-icon {
+  width: 50px;
+  height: 50px;
+}
+.welcome-title {
+  font-size: 20px;
+  color: #ffc107;
+  margin: 5px 0;
+}
+.restaurant-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff5733;
+  margin-bottom: 20px;
+}
+
+/* Form Container */
+.auth-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin: 0 auto;
+  color: #fff;
+}
+.auth-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #111; /* Or #222, any dark gray */
+}
+input::placeholder {
+  color: #555; /* dark placeholder text */
+}
+
+/* Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Links and Footer */
+.text-center a {
+  color: #f4b400; /* dark yellow */
+  text-decoration: underline;
+}
+
+.text-center a:hover {
+  color: #ffa500; /* dark orange hover */
+}
+
+.footer-message {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #222; /* dark gray for visibility */
+}
+
+/* Form container text color */
+.auth-container {
+  color: #111; /* dark text */
+}
+
+/* Title colors */
+.auth-title {
+  color: #111; /* dark title */
+}
+.restaurant-name {
+  color: #c0392b; /* deep red */
+}
+.welcome-title {
+  color: #e67e22; /* darker orange */
+}
+
+.welcome-title {
+  font-size: 24px;
+  color: #ff9800;
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+}
+
+.restaurant-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #c0392b;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}

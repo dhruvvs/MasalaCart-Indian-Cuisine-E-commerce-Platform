@@ -1,0 +1,30 @@
+/* Thank You Page Styling */
+
+.thank-you-box {
+    background-color: #fffdf5;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-top: 80px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .thank-you-title {
+    font-size: 2.2rem;
+    color: #28a745;
+    margin-bottom: 20px;
+  }
+  
+  .thank-you-message {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #444;
+  }
+  
+  .summary-title {
+    margin-top: 30px;
+    color: #343a40;
+  }
+  

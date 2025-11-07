@@ -1,0 +1,133 @@
+/* ---------- Global Look ---------- */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefcf7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ---------- Navbar ---------- */
+  .navbar {
+    background-color: #ff914d;
+    padding: 15px 20px;
+    font-weight: bold;
+  }
+  
+  .navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  /* ---------- Buttons ---------- */
+  .btn-primary,
+  .btn-success,
+  .btn-warning {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #0066ff;
+    border: none;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+  }
+  
+  /* ---------- Product Cards ---------- */
+  .product {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  }
+  
+  .product img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .product h5 {
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  /* ---------- Auth Pages (Login / Signup) ---------- */
+  
+  .auth-bg {
+    background: #fffdf5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .auth-container {
+    width: 100%;
+    max-width: 460px;
+    padding: 20px;
+  }
+  
+  .auth-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .auth-card input {
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .auth-card p {
+    margin-bottom: 15px;
+  }
+  
+  .auth-card ul {
+    padding-left: 18px;
+    margin-top: -10px;
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  /* ---------- Footer ---------- */
+  footer {
+    background-color: #f8f9fa;
+    color: #555;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  

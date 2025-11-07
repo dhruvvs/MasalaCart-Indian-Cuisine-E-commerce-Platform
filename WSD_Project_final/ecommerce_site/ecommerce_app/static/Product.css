@@ -1,0 +1,82 @@
+/* PRODUCT CARD STYLING */
+.product {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .product:hover {
+    transform: scale(1.02);
+  }
+  
+  .product img {
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Product Title */
+  .product h5 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Price Text */
+  .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d63384;
+    margin-bottom: 10px;
+  }
+  
+  /* Filter dropdowns */
+  #categoryFilter, #sortFilter {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+  }
+  
+  /* Quantity Buttons */
+  .btn-sm {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+  }
+  
+  #productListing span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 5px;
+  }
+  
+  /* Add to Cart Button */
+  form button[type="submit"] {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  /* Product Card Wrapper */
+  .product-card-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+
+

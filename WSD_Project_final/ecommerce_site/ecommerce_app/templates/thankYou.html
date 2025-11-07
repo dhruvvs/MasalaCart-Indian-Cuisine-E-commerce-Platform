@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'thankYou.css' %}">
+</head>
+<body>
+    <div class="container text-center mt-5 thank-you-box">
+        <h1 class="thank-you-title">🎉 Thank You for Your Purchase!</h1>
+        <p class="thank-you-message">Your order has been successfully placed.</p>
+        <h3 class="summary-title">Order Summary</h3>
+        <p><strong>Total Quantity:</strong> {{ total_quantity }}</p>
+        <p><strong>Total Price:</strong> ${{ total_price }}</p>
+        <a href="{% url 'ecommerce_app:product' %}" class="btn btn-success mt-3">Continue Shopping</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* Full-page background */
+.auth-page {
+  background: url("{% static 'images/spices.png' %}") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loader spinner */
+.loader-wrapper {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.85);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinner {
+  border: 6px solid #ccc;
+  border-top: 6px solid #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Wrapper */
+.auth-wrapper {
+  text-align: center;
+}
+
+/* Header Section */
+.auth-header {
+  margin-bottom: 20px;
+}
+.chef-icon {
+  width: 60px;
+  height: 60px;
+}
+.welcome-title {
+  font-size: 20px;
+  color: #f0c040;
+  margin: 10px 0 5px;
+}
+.restaurant-name {
+  font-size: 28px;
+  color: #ff4e3c;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Form Container */
+.auth-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 420px;
+  margin: auto;
+  color: #f5f5f5;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+/* Titles */
+.auth-title {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #111; /* Or #222, any dark gray */
+}
+input::placeholder {
+  color: #555; /* dark placeholder text */
+}
+
+/* Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Links and Footer */
+.text-center a {
+  color: #f4b400; /* dark yellow */
+  text-decoration: underline;
+}
+
+.text-center a:hover {
+  color: #ffa500; /* dark orange hover */
+}
+
+.footer-message {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #222; /* dark gray for visibility */
+}
+
+/* Form container text color */
+.auth-container {
+  color: #111; /* dark text */
+}
+
+/* Title colors */
+.auth-title {
+  color: #111; /* dark title */
+}
+.restaurant-name {
+  color: #c0392b; /* deep red */
+}
+.welcome-title {
+  color: #e67e22; /* darker orange */
+}
+
+.welcome-title {
+  font-size: 24px;
+  color: #ff9800;
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+}
+
+.restaurant-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #c0392b;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+

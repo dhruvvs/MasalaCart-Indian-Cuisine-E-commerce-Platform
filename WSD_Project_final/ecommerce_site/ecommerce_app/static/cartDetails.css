@@ -1,0 +1,90 @@
+/* Table Styling */
+.table th {
+    background-color: #fff3cd;
+    color: #000;
+    text-align: center;
+  }
+  
+  .table td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 12px 8px;
+  }
+  
+  /* Product Image Styling */
+  .product-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Quantity Buttons */
+  .decrement-btn,
+  .increment-btn {
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    background-color: #ffc107;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .quantity-val {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Total Price Summary Row */
+  #total-quantity, #total-price {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  /* Payment Card Layout */
+  .payment-card {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Card Icons */
+  .card-icons {
+    font-size: 1.5rem;
+    color: #495057;
+    margin: 10px 0;
+  }
+  
+  .card-icons i {
+    margin-right: 10px;
+  }
+  
+  /* Month and CVV Fields */
+  .month-cvv {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Checkout Button */
+  .checkout-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Alert Message */
+  .alert {
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+  
