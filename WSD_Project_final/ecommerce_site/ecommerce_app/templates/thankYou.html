@@ -11,12 +11,41 @@
 </head>
 <body>
     <div class="container text-center mt-5 thank-you-box">
-        <h1 class="thank-you-title">🎉 Thank You for Your Purchase!</h1>
-        <p class="thank-you-message">Your order has been successfully placed.</p>
-        <h3 class="summary-title">Order Summary</h3>
-        <p><strong>Total Quantity:</strong> {{ total_quantity }}</p>
-        <p><strong>Total Price:</strong> ${{ total_price }}</p>
-        <a href="{% url 'ecommerce_app:product' %}" class="btn btn-success mt-3">Continue Shopping</a>
+        {% if order %}
+        <h3>Shipping To</h3>
+        <p>
+            {{ order.full_name }}<br>
+            {{ order.street }}<br>
+            {{ order.city }}, {{ order.state }} {{ order.zip_code }}<br>
+            Phone: {{ order.phone }}
+        </p>
+        {% endif %}
+        {% if order %}
+            <h1 class="thank-you-title">🎉 Thank You for Your Purchase!</h1>
+            <p class="thank-you-message">Your order has been successfully placed.</p>
+
+            <h3 class="summary-title">Order Summary</h3>
+            <p><strong>Order ID:</strong> {{ order.id }}</p>
+            <p><strong>Total Quantity:</strong> {{ order.total_quantity }}</p>
+            <p><strong>Total Price:</strong> ${{ order.total_price }}</p>
+
+            <h4 class="mt-4">Items</h4>
+            <ul class="list-unstyled">
+                {% for item in order.items.all %}
+                    <li>
+                        {{ item.product.name }} x {{ item.quantity }}
+                        — ${{ item.line_total }}
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <a href="{% url 'ecommerce_app:product' %}" class="btn btn-success mt-3">Continue Shopping</a>
+            <a href="{% url 'ecommerce_app:my_orders' %}" class="btn btn-outline-primary mt-3 ms-2">View My Orders</a>
+        {% else %}
+            <h1 class="thank-you-title">No Recent Order</h1>
+            <p class="thank-you-message">We couldn’t find a recent order to show.</p>
+            <a href="{% url 'ecommerce_app:product' %}" class="btn btn-success mt-3">Back to Shop</a>
+        {% endif %}
     </div>
 </body>
 </html>

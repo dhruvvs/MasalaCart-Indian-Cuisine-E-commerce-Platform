@@ -1,42 +1,47 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Registration</title>
-    {% load static %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'ecommerce_site/ecommerce_app/static/signup.css' %}">
-    <link rel="stylesheet" href="{% static 'ecommerce_site/ecommerce_app/static/login.css' %}">
+    <!-- Use correct static paths -->
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
+    <link rel="stylesheet" href="{% static 'login.css' %}">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">INDIAN CUISNE</a>
+            <!-- Link back to home if you want -->
+            <a class="navbar-brand" href="{% url 'ecommerce_app:product' %}">
+                INDIAN ESSENCE CUISINE
+            </a>
         </div>
     </nav>
+
     <div class="container mt-5">
         <div class="row justify-content-center">
-            {%load static%}
             <div class="col-md-6">
-                <!-- <div class="card-header text-center">
-                    <h3>Sign Up</h3>
-                </div> -->
                 <div class="card" style="margin-top: 10%;">
                     <div class="card-body">
                         <div class="text-center mt-3">
                             <p>Logged out successfully!</p>
-                            <p>Click here to log back in <a href="{% url 'ecommerce_app:login' %}">Login</a></p>
-                            <!-- <button type="submit" class="btn btn-success w-100">Sign Up</button> -->
+                            <p>
+                                Click here to log back in
+                                <a href="{% url 'ecommerce_app:login' %}">Login</a>
+                            </p>
                         </div>  
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <footer class="bg-light text-center py-3 mt-5">
-        <p class="mb-0" id="footer-content">© 2025 INDIAN CUISNE</p>
+        <p class="mb-0" id="footer-content">© 2025 INDIAN ESSENCE CUISINE</p>
     </footer>
+
     <script src="https://kit.fontawesome.com/50f89db14f.js" crossorigin="anonymous"></script>
 </body>
 </html>
